@@ -1,6 +1,8 @@
 # Pyspark-cheatsheet
 
-Cheatsheet for Pysppark. Tested this on AWS EMR.
+Cheatsheet for Pysppark. 
+
+Tested this on AWS EMR.
 Created a cluster - 1 master and 2 workers wiht following (Advanced Options when creating cluster): Hive 2.3.7, Pig 0.17.0, Hue 4.9.0, JupyterEnterpriseGateway 2.1.0, Spark 2.4.7
 
 EMR Pricing: https://aws.amazon.com/emr/pricing/
