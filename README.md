@@ -8,9 +8,9 @@ Created a cluster - 1 master and 2 workers with following (Advanced Options when
 EMR Pricing: https://aws.amazon.com/emr/pricing/
 
 TIPs,
-1) better to define schema rather than infer schema. Infer schema causes job to read file multiple times
+1) It is better to define schema prior to import rather than infer schema. Infer schema causes job to read file multiple times
 2) More workers better than larger workers
-3) more files bettwr than large ones. Preferable for file to be around same size
+3) More files better than large ones. Preferable for files to be around same size
 4) .parquet files are faster and work around some issues surrounding .csv
 5) Spark Dataframes are immutable.
 6) Spark uses Lazy processing - transformations are not run till an action is called and might be reordered. Keep that in mind
