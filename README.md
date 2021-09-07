@@ -12,8 +12,9 @@ TIPs,
 2) More workers better than larger workers
 3) More files better than large ones. Preferable for files to be around same size
 4) .parquet files are faster and work around some issues surrounding .csv
-5) Spark Dataframes are immutable.
-6) Spark uses Lazy processing - transformations are not run till an action is called and might be reordered. Keep that in mind
-7) Reshuffling of data - need to avoid that as it slows processing. JOIN operations can reshuffle data
-8) Can cache using .cache()
-9) MLlib requires RDD and requires features to be numerical (On Hot Encode categorical vars)
+5) Sparks csv parser automatically ignores blank lines, can ignore comments if specified (e.g. df1 = spark.read.csv('datafile.csv.gz', comment='#'))
+6) Spark Dataframes are immutable.
+7) Spark uses Lazy processing - transformations are not run till an action is called and might be reordered. Keep that in mind
+8) Reshuffling of data - need to avoid that as it slows processing. JOIN operations can reshuffle data
+9) Can cache using .cache()
+10) MLlib requires RDD and requires features to be numerical (On Hot Encode categorical vars)
