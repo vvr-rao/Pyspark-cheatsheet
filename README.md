@@ -17,5 +17,5 @@ TIPs,
 7) Spark uses Lazy processing - transformations are not run till an action is called and might be reordered. Keep that in mind
 8) Reshuffling of data - need to avoid that as it slows processing. JOIN operations can reshuffle data
 9) Can cache using .cache()
-10) MLlib requires RDD and requires features to be numerical (e.g One Hot Encode categorical vars) This is dependent on model.e.g. for Random Forest a simple strng indexer is fine
+10) MLlib requires RDD and requires features to be numerical (e.g One Hot Encode categorical vars) This is dependent on model.e.g. for Random Forest a simple string indexer is fine
 11) Also models handle missing data and scaling differently. Random forst does not need Scaling. Linear Regression and KNN do. Missing values can be replaced by something out of range for Random Forest. KNN and Regression need more thought
