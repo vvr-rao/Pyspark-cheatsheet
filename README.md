@@ -7,7 +7,7 @@ Created a cluster - 1 master and 2 workers with following (Advanced Options when
 
 NOTE: NOT choosing the Hadoop option throws an error of - No FileSystem for scheme "s3" - when I try to read my input data from S3. I guess I have to configure it vs uusing the default configuration.
 
-I also chose the option of Spot Instances vs Dedicated and have been able to save money on occasion.
+I also chose the option of Spot Instances (vs Dedicated) for cost savings.
 
 EMR Pricing: https://aws.amazon.com/emr/pricing/
 
