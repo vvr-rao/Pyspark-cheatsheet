@@ -5,7 +5,7 @@ Cheatsheet for Pysppark.
 Tested this on AWS EMR.
 Created a cluster - 1 master and 2 workers with following (Advanced Options when creating cluster): Hadoop 2.10.1, Hive 2.3.7, Pig 0.17.0, Hue 4.9.0, JupyterEnterpriseGateway 2.1.0, Spark 2.4.7
 
-NOTE: NOT choosing the Hadoop option throws an error of - No FileSystem for scheme "s3" - when I try to read my input data from S3. I guess I have to configure it vs uusing the default configuration.
+NOTE: NOT choosing the Hadoop option throws an error of - No FileSystem for scheme "s3" - when I try to read my input data from S3. I guess I have to configure it vs using the default configuration.
 
 I also chose the option of Spot Instances (vs Dedicated) for cost savings.
 
